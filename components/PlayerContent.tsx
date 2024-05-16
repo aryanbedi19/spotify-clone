@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Howl, Howler } from 'howler';
+
 import { BsPauseFill, BsPlayFill } from "react-icons/bs";
 import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
 import { AiFillStepBackward, AiFillStepForward } from "react-icons/ai";
@@ -117,7 +118,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
           "
         >
           <AiFillStepBackward
-            onClick={onPlayPrevious}
+            //onClick={null}
             size={30} 
             className="
               text-neutral-400 
@@ -143,7 +144,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
             <Icon size={30} className="text-black" />
           </div>
           <AiFillStepForward
-            onClick={onPlayNext}
+            //onClick={}
             size={30} 
             className="
               text-neutral-400 
