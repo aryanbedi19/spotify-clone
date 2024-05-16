@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FaPlay } from "react-icons/fa";
+import AuthModal from "./AuthModal";
 
 interface ListItemProps {
   image: string;
@@ -19,7 +20,7 @@ const ListItem: React.FC<ListItemProps> = ({
   
   const onClick = () => {
     if (!user) {
-      return authModal.onOpen();
+      return authModal?.onOpen();
     }
 
     router.push(href);
